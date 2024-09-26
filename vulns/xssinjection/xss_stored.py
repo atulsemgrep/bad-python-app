@@ -13,3 +13,9 @@ def xss_stored_api(request, app):
     result = app.db_helper.execute_write('INSERT INTO messages (message) VALUES (:msg)', { 'msg': message })
 
     return xss_stored_page(request, app)
+
+def xss_stored_api1(request, app):
+    message = request.form['message']
+    result = app.db_helper.execute_write('INSERT INTO messages (message) VALUES (:msg)', { 'msg': message })
+
+    return xss_stored_page(request, app)
