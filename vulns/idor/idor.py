@@ -32,6 +32,7 @@ def idor_login_api(request, app):
 
     resp.set_cookie('user_id', str(user.id))
     resp.set_cookie('session_token', str(user.password))
+    resp.set_cookie('user_id', str(user.id))
 
     return resp
 
