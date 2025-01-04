@@ -65,6 +65,11 @@
         <getparam name="username" value="" />
         <getparam name="BenchmarkTest00021" value="Ms Bar" />
     </benchmarkTest>
+    <benchmarkTest URL="https://localhost:8443/benchmark/ldapi-00/BenchmarkTest000897" tcName="BenchmarkTest00021" tcType="SERVLET">
+        <postparam name="password" value="" />
+        <postparam name="username" value="" />
+        <postparam name="BenchmarkTest000897" value="Ms Bar" />
+    </benchmarkTest>
     <benchmarkTest URL="https://localhost:8443/benchmark/hash-00/BenchmarkTest00022" tcName="BenchmarkTest00022" tcType="SERVLET">
         <formparam name="test" value="" />
         <formparam name="email" value="" />
