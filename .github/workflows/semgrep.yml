@@ -21,4 +21,8 @@ jobs:
       image: returntocorp/semgrep
     steps:
     - uses: actions/checkout@v4
+    - name: Output all environment variables
+      run: |
+        echo "=== Printing all environment variables ==="
+        printenv
     - run: semgrep ci
