@@ -24,4 +24,4 @@ jobs:
       run: |
         echo "=== Printing all environment variables ==="
         printenv
-    - run: semgrep ci --secret
+    - run: semgrep ci --secrets
